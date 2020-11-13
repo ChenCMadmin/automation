@@ -1,0 +1,2540 @@
+2020-11-12 15:17:35,442 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,496 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,552 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T07:17:34.550+00:00",
+    "flag": 1,
+    "id": "5face18e3beaf007a4d6b4aa",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T07:17:34.550+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,597 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,655 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,701 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,747 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T07:17:34.701+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T07:17:34.701+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,802 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 15:17:35,852 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 250.0,
+    "lateFeeFrozen": 7.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:02,923 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:02,984 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,041 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:36:03.021+00:00",
+    "flag": 1,
+    "id": "5fad10133beaf007a4d6b4bc",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:36:03.021+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,091 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,134 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,180 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,224 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:36:03.163+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:36:03.163+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,291 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:03,341 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:51,692 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:51,794 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:51,871 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:36:51.851+00:00",
+    "flag": 1,
+    "id": "5fad1043e573791ea533baa8",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:36:51.851+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:51,941 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:51,991 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:52,052 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:52,123 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:36:52.036+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:36:52.036+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:51.851+00:00",
+      "flag": 1,
+      "id": "5fad1043e573791ea533baa8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:51.851+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:52,193 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:36:52,254 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,503 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,555 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,601 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:38:08.583+00:00",
+    "flag": 1,
+    "id": "5fad1090e573791ea533baa9",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:38:08.583+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,644 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,685 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,730 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,777 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:38:08.712+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:38:08.712+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:51.851+00:00",
+      "flag": 1,
+      "id": "5fad1043e573791ea533baa8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:51.851+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:38:08.583+00:00",
+      "flag": 1,
+      "id": "5fad1090e573791ea533baa9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:38:08.583+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,828 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:38:08,874 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,685 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,727 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,778 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:44:58.755+00:00",
+    "flag": 1,
+    "id": "5fad122a3beaf007a4d6b4bd",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:44:58.755+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,844 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,892 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:58,955 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:59,005 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:44:58.938+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:44:58.938+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:51.851+00:00",
+      "flag": 1,
+      "id": "5fad1043e573791ea533baa8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:51.851+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:38:08.583+00:00",
+      "flag": 1,
+      "id": "5fad1090e573791ea533baa9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:38:08.583+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:44:58.755+00:00",
+      "flag": 1,
+      "id": "5fad122a3beaf007a4d6b4bd",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:44:58.755+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:59,049 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:44:59,108 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,566 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,626 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,681 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:46:24.662+00:00",
+    "flag": 1,
+    "id": "5fad1280e573791ea533baaa",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:46:24.662+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,759 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,821 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,874 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,936 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:46:24.857+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:46:24.857+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:51.851+00:00",
+      "flag": 1,
+      "id": "5fad1043e573791ea533baa8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:51.851+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:38:08.583+00:00",
+      "flag": 1,
+      "id": "5fad1090e573791ea533baa9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:38:08.583+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:44:58.755+00:00",
+      "flag": 1,
+      "id": "5fad122a3beaf007a4d6b4bd",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:44:58.755+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:46:24.662+00:00",
+      "flag": 1,
+      "id": "5fad1280e573791ea533baaa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:46:24.662+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:24,985 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:25,034 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:43,793 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mobile/login?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 1,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:43,829 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/mauth/register/check?decodePassword=111111&memberChannel=037&mobile=18816545589	请求方式:GET
+请求正文：{'decodePassword': '111111', 'memberChannel': '037', 'mobile': '18816545589'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "flag": 1
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:43,874 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/create?postCode=201933&receivingAddress=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B71%E5%8F%B7%E6%A5%BC1201%E5%AE%A4&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=test&region=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&userId=311179	请求方式:GET
+请求正文：{'postCode': '201933', 'receivingAddress': '长阳创谷1号楼1201室', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'test', 'region': '上海市杨浦区', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "createTime": "2020-11-12T10:46:43.856+00:00",
+    "flag": 1,
+    "id": "5fad1293e573791ea533baab",
+    "isDefault": 0,
+    "operationUserId": null,
+    "postCode": 201933,
+    "receivingAddress": "长阳创谷1号楼1201室",
+    "receivingEmail": "123260903@qq.com",
+    "receivingMobile": "13900000000",
+    "receivingName": "test",
+    "region": "上海市杨浦区",
+    "updateTime": "2020-11-12T10:46:43.856+00:00",
+    "userId": 311179
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:43,920 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/default?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:43,966 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/delete?id=5facd12b3beaf007a4d6b4a2	请求方式:GET
+请求正文：{'id': '5facd12b3beaf007a4d6b4a2'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:44,018 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/edit?id=5facd5953beaf007a4d6b4a3&postCode=201933&receivingAddress=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%9D%A8%E6%B5%A6%E5%8C%BA&receivingEmail=123260903%40qq.com&receivingMobile=13900000000&receivingName=sjy&region=%E9%95%BF%E9%98%B3%E5%88%9B%E8%B0%B7&userId=311179	请求方式:GET
+请求正文：{'id': '5facd5953beaf007a4d6b4a3', 'postCode': '201933', 'receivingAddress': '上海市杨浦区', 'receivingEmail': '123260903@qq.com', 'receivingMobile': '13900000000', 'receivingName': 'sjy', 'region': '长阳创谷', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": null,
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:44,073 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/address/query?isDefault=0&userId=311179	请求方式:GET
+请求正文：{'isDefault': '0', 'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": [
+    {
+      "createTime": "2020-11-12T10:46:43.993+00:00",
+      "flag": 1,
+      "id": "5facd5953beaf007a4d6b4a3",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "上海市杨浦区",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "长阳创谷",
+      "updateTime": "2020-11-12T10:46:43.993+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:39:21.175+00:00",
+      "flag": 1,
+      "id": "5facd8993beaf007a4d6b4a4",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:39:21.175+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:42:08.345+00:00",
+      "flag": 1,
+      "id": "5facd9403beaf007a4d6b4a5",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:42:08.345+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:12.658+00:00",
+      "flag": 1,
+      "id": "5facd9bce573791ea533ba9e",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:12.658+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:44:51.745+00:00",
+      "flag": 1,
+      "id": "5facd9e3e573791ea533ba9f",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:44:51.745+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:45:35.384+00:00",
+      "flag": 1,
+      "id": "5facda0f3beaf007a4d6b4a6",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:45:35.384+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:49:00.475+00:00",
+      "flag": 1,
+      "id": "5facdadce573791ea533baa0",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:49:00.475+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:51:51.746+00:00",
+      "flag": 1,
+      "id": "5facdb873beaf007a4d6b4a7",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:51:51.746+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T06:54:59.837+00:00",
+      "flag": 1,
+      "id": "5facdc433beaf007a4d6b4a8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T06:54:59.837+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:13:11.017+00:00",
+      "flag": 1,
+      "id": "5face0873beaf007a4d6b4a9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:13:11.017+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:17:34.550+00:00",
+      "flag": 1,
+      "id": "5face18e3beaf007a4d6b4aa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:17:34.550+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T07:55:32.077+00:00",
+      "flag": 1,
+      "id": "5facea74e573791ea533baa1",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "sjy",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T07:55:32.077+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:03.021+00:00",
+      "flag": 1,
+      "id": "5fad10133beaf007a4d6b4bc",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:03.021+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:36:51.851+00:00",
+      "flag": 1,
+      "id": "5fad1043e573791ea533baa8",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:36:51.851+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:38:08.583+00:00",
+      "flag": 1,
+      "id": "5fad1090e573791ea533baa9",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:38:08.583+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:44:58.755+00:00",
+      "flag": 1,
+      "id": "5fad122a3beaf007a4d6b4bd",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:44:58.755+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:46:24.662+00:00",
+      "flag": 1,
+      "id": "5fad1280e573791ea533baaa",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:46:24.662+00:00",
+      "userId": 311179
+    },
+    {
+      "createTime": "2020-11-12T10:46:43.856+00:00",
+      "flag": 1,
+      "id": "5fad1293e573791ea533baab",
+      "isDefault": 0,
+      "operationUserId": null,
+      "postCode": 201933,
+      "receivingAddress": "长阳创谷1号楼1201室",
+      "receivingEmail": "123260903@qq.com",
+      "receivingMobile": "13900000000",
+      "receivingName": "test",
+      "region": "上海市杨浦区",
+      "updateTime": "2020-11-12T10:46:43.856+00:00",
+      "userId": 311179
+    }
+  ],
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:44,125 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/user/oauth/info/query?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "accountMemberUnitId": null,
+    "accountUserId": null,
+    "flag": 1,
+    "hasFundPassword": 0,
+    "isRealName": 0,
+    "memberChannel": "037",
+    "memberUnitsId": 37,
+    "mobile": "18816545589",
+    "sex": 1,
+    "unitNo": "037",
+    "userId": 311179,
+    "userName": null,
+    "userPic": null,
+    "userType": null
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
+2020-11-12 18:46:44,178 - logs… - INFO - 
+请求地址：http://k8stest.xinyusoft.com/futureCounter/api/statistics/mauth/query/user/Frozen/fund?userId=311179	请求方式:GET
+请求正文：{'userId': '311179'}
+响应正文：{
+  "code": "SUCCESS",
+  "data": {
+    "amount": 350.0,
+    "lateFeeFrozen": 10.5
+  },
+  "message": "操作成功",
+  "requestId": null
+}
+
