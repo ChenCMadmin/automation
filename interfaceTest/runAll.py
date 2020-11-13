@@ -23,7 +23,7 @@ class AllTest:  # 定义一个类AllTest
         读取caselist.txt文件中的用例名称，并添加到caselist元素组
         :return:
         """
-        fb = open(self.caseListFile)
+        fb = open(self.caseListFile,encoding= 'utf-8')
         for value in fb.readlines():
             data = str(value)
             if data != '' and not data.startswith("#"):  # 如果data非空且不以#开头
