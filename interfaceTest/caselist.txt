@@ -1,8 +1,7 @@
 用户接口/test_user
-#user/test02case
-#user/test03case
-#user/test04case
-#user/test05case
-#shop/test_shop_list
+对账接口/test_verify
+订单接口/test_order
+体验券接口/test_coupon
+提货及订单修改/test_order1
 #shop/test_my_shop
 #shop/test_new_shop
